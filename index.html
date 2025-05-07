@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DronaSun</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div>
+        <nav>
+            <input type="checkbox" id="check" onclick="setListPosition()"/>
+            <label for="check" class="checkbtn">
+                <img src="./icons/menu.png" alt="Menu" width="40px">
+            </label>
+            <label class="logo">DronaSun</label>
+            <ul id="list">
+            <li><a class="active" href="#" onclick="setListPosition()">Home</a></li>
+            <li><a href="#aboutDronaSun" onclick="setListPosition()">About</a></li>
+            <li><a href="#simulation" onclick="setListPosition()">Simulation</a></li>
+            <li><a href="#contact" onclick="setListPosition()">Contact</a></li>
+            <li><a href="#" onclick="setListPosition()">Feedback</a></li>
+            </ul>
+        </nav>
+
+        <div id="Heading">
+            <img src="./images/Logo.png" alt="" id="logoHeading">
+            <div class="info infoHeading">
+                <H1 id="h1Heading">Are you ready to explore new life ?</H1>
+                <p>DronaSun uses advanced drone technology and AI to transform olive farming. It enables early disease detection, precise irrigation, soil health analysis, and targeted pest control.</p>
+                <button id="buyNow"><a href="#commandez">Buy now!</a></button>
+            </div>
+        </div>
+
+        <div class='content' id="aboutDronaSun">
+            <div class="image">
+            <img src="./images/Drone1.png" alt="" class='infoImage' />
+
+            </div>
+            <div class="info">
+            <h1>About DronaSun</h1>
+            <p>DRONA’SUN combines advanced drone technology with AI to revolutionize olive farming. By enabling early disease detection and optimizing farming practices, it promotes precision agriculture and sustainability, ensuring healthier orchards and improved yields.</p>
+
+            </div>
+            
+        </div>
+        <div class='content' id="HowToUseContent">
+            
+            <div class="info">
+            <h1>How To Use ?</h1>
+            <p>DRONA’SUN transforms olive farming with advanced drone and AI technology, enabling early disease detection, precise irrigation management, soil health analysis, and targeted pest control. It also generates detailed orchard maps and monitors tree growth to optimize yields. By enhancing productivity and promoting sustainable practices, DRONA’SUN supports eco-friendly and efficient farming.</p>
+
+            </div>
+            <div class="image">
+                <img src="./images/Drone2.png" alt="" class='infoImage' />
+    
+                </div>
+            
+        </div>
+        <div class="videoSimulation" id="simulation">
+            <h1>3D Simulation Video :</h1>
+            <video src="./videos/simulation.mp4" width="80%" autoplay controls></video>
+        </div>
+            <h1 id="teamHeader">Team Members :</h1>
+            <div class="cards">
+                <div class="userCard">
+                    <img src="./images/Najib Bouaziz.png" alt="User" class="userImage">
+                    <div class="userData">
+                        <div>
+                            <h2 class="userName">Najib Bouaziz</h2>
+                            <h4>Founder</h4>
+                            <p class="userEmail">najib.bouaziz7@ieee.org</p>
+                        </div>
+                        <img src="./icons/linkedin.png" alt="LinkedIn" class="linkedInLogo">
+                    </div>
+                    
+                </div>
+            <div class="userCard">
+                <img src="./images/Emna Ben Jemea.png" alt="User" class="userImage">
+                <div class="userData">
+                    <div>
+                        <h2 class="userName">Emna Ben Jemeaa</h2>
+                        <h4>CO Founder</h4>
+                        <p class="userEmail">emna.benjemeaa@ieee.org</p>
+                    </div>
+                    <a href="facebook.com">
+                    <img src="./icons/linkedin.png" alt="LinkedIn" class="linkedInLogo"></a>
+                </div>
+                
+            </div>
+            <div class="userCard">
+                <img src="./images/Moez Ben Slima.jpg" alt="User" class="userImage">
+                <div class="userData">
+                    <div>
+                        <h2 class="userName">Moez Ben Slima</h2>
+                        <h4>Logistic Manager</h4>
+                        <p class="userEmail">moez.benslima@ieee.org</p>
+                    </div>
+                    <img src="./icons/linkedin.png" alt="LinkedIn" class="linkedInLogo">
+                </div>
+                
+            </div>
+            <div class="userCard">
+                <img src="./images/Eya Kessis.jpg" alt="User" class="userImage">
+                <div class="userData">
+                    <div>
+                        <h2 class="userName">Eya Kessis</h2>
+                        <h4>Media Manager</h4>
+                        <p class="userEmail">kassis.eya@ieee.org</p>
+                    </div>
+                    <img src="./icons/linkedin.png" alt="LinkedIn" class="linkedInLogo">
+                </div>
+                
+            </div>
+            <div class="userCard">
+                <img src="./images/Sarah Abdellaoui.jpg" alt="User" class="userImage">
+                <div class="userData">
+                    <div>
+                        <h2 class="userName">Sarah Abdellaoui</h2>
+                        <h4>Marketing Manager</h4>
+                        <p class="userEmail">abdellaoui.sarra@ieee.org</p>
+                    </div>
+                    <img src="./icons/linkedin.png" alt="LinkedIn" class="linkedInLogo">
+                </div>
+                
+            </div>
+        </div>
+        
+        
+    </div>
+    <div>
+        <form id="commandez" method="get">
+            <h1 class="title">Commandez maintenant :</h1>
+            <div class="twoDataInput">
+                <div class="dataToInsert">
+                    <div class="labels">
+                        <label>Prénom :</label><label>: الاسم</label>
+                    </div>
+                    <input type="text" name="name" id="name" required>
+                </div>
+                <div class="dataToInsert">
+                    <div class="labels">
+                        <label>Nom :</label><label>: اللقب</label>
+                    </div>
+                    <input type="text" name="lastName" id="lastName" required>
+                </div>
+            </div>
+            <div class="dataToInsert">
+                <div class="labels">
+                    <label>CIN :</label><label>: رقم بطاقة التعريف الوطنية</label>
+                </div>
+                <input type="number" name="cin" id="cin" required>
+            </div>
+            <div class="dataToInsert">
+                <div class="labels">
+                    <label>E-mail :</label><label>: البريد الالكتروني</label>
+                </div>
+                <input type="email" name="email" id="email">
+            </div>
+            <div class="dataToInsert">
+                <div class="labels">
+                    <label>Num Tél :</label><label>: رقم الهاتف</label>
+                </div>
+                <input type="number" name="numTel" id="numTel" required>
+            </div>
+            <div class="dataToInsert">
+                <div class="labels">
+                    <label>Adresse :</label><label>: العنوان</label>
+                </div>
+                <input type="text" name="adresse" id="adresse" required>
+            </div>
+            <div class="buttons">
+                <input type="submit" value="Envoyer" id="formSubmission">
+            </div>
+        </form>
+    </div>
+    <footer id="contact">
+        <div class="footer-container">
+            <div class="footer-section">
+                <img src="./images/Logo.png" alt="Logo" width="200px">
+                <h3>Our Vision, Your Precision</h3>
+            </div>
+            <div class="footer-infos">
+                <div class="footerInfo">
+                    <img src="./icons/mail.png" width="50px" alt="Email" class="infoIcon">
+                    <p>dronasun.company@gmail.com</p>
+                </div>
+                <div class="footerInfo">
+                    <img src="./icons/phone.png" width="50px" alt="Phone number" class="infoIcon">
+                    <p>+216 54 467 115</p>
+                </div>
+                <div class="footerInfo">
+                    <img src="./icons/adresse.png" width="50px" alt="Adresse" class="infoIcon">
+                    <p>Route Tunis km 10 Hay l Ons - Sfax - Tunisie</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+<script src="submission.js"></script>
+</html>

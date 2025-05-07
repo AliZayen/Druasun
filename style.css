@@ -1,0 +1,457 @@
+/* Google Fonts Link */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  z-index: 2;
+}
+
+a{
+  color: azure;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+nav {
+  background: #1e5631;
+  height: 80px;
+  width: 100%;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0px 10px 10px #1e5631;
+  position: fixed;
+  z-index: 3;
+}
+
+label.logo {
+  color: rgb(232, 232, 232);
+  font-size: 25px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+  background-color: #1e5631;
+}
+
+nav ul li a {
+  color: #c0e7cc;
+  font-size: 17px;
+  padding: 7px 13px;
+  
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+li.active,
+li:hover {
+    background-color: #4a7759;
+  transition: .5s;
+}
+
+.checkbtn {
+  font-size: 22px;
+  color: rgb(79, 79, 79);
+  float: right;
+  line-height: 80px;
+  margin-right: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+#Heading{
+  min-height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  background: url("./images/Background.jpg");
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  padding: 10%;
+  padding-top: 200px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#logoHeading{
+  height: auto;
+  width: 50vw;
+  max-width: 500px;
+}
+
+
+
+
+.infoImage{
+  width: 30vw;
+  border-radius: 30px;
+
+}
+
+.info{
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  margin: auto 50px;
+}
+
+.infoHeading{
+  max-width: 800px;
+  
+}
+
+.content{
+  display: flex;
+  flex-direction: row;
+  padding: 10%;
+}
+
+#Heading h1,
+#Heading p{
+  color: #e6e6e6;
+}
+
+p{
+  font-size: 20px;
+}
+
+.info{
+  align-items: center;
+}
+
+#buyNow{
+  width: 250px;
+  padding: 20px;
+  background-color: rgb(6, 110, 6);
+  border: #187939 solid;
+  border-radius: 40px;
+  color: #e6e6e6;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 24px;
+}
+
+#buyNow:hover{
+  background-color: rgb(2, 51, 2);
+}
+
+.videoSimulation{
+  text-align: center;
+  padding: 50px;
+}
+.videoSimulation video{
+  border-radius: 10px;
+  margin: 50px;
+  box-shadow: 5px 10px 10px gray;
+  z-index: 1;
+}
+
+
+form{
+  width: 100%;
+  background-color: #1e5631;
+  align-items: center;
+  padding: 50px 0px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 0;
+  color: aliceblue;
+}
+
+.labels{
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+input[type='text'],
+input[type='number'],
+input[type='email']{
+  width: 80%;
+  height: 30px;
+  background-color: white;
+  border-radius: 10px;
+  border: 0px;
+  font-size: 15px;
+  padding: 5px 10px;
+  box-shadow: 2px 2px 10px #0f2b18;
+}
+
+.dataToInsert{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px auto;
+  row-gap: 10px;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.title{
+  text-align: center;
+  font-family: cursive;
+  padding: 20px;
+}
+
+#formSubmission{
+  width: 270px;
+  height: 45px;
+  font-size: 18px;
+  background-color: white;
+  border: #1e5631;
+  border-radius: 20px;
+  border: 2px inset ;
+}
+
+#formSubmission:focus{
+  border: 2px #0f2b18;
+  border: outset;
+}
+
+#formSubmission:hover{
+  border: 2px #0f2b18;
+  border: outset;
+}
+
+
+.buttons{
+  text-align: center;
+}
+
+@media (min-width : 800px){
+  .twoDataInput{
+      display: flex;
+      width: 90%;
+      margin: auto;
+      max-width: 900px;
+  }
+  input[type='text'],
+  input[type='number'],
+  input[type='email']{
+    height: 40px;
+  }
+}
+
+@media (max-width: 1200px) {
+  #Heading{
+    flex-direction: column;
+  }
+  label.logo {
+    padding-left: 30px;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 890px) {
+  .videoSimulation video{
+    width: 100%;
+    margin: 50px 0;
+  }
+  #HowToUseContent{
+    flex-direction: column-reverse;
+  }
+  .videoSimulation{padding: 20px;}
+  p{
+    font-size: 15px;
+  }
+  .checkbtn {
+    display: block;
+  }
+
+  label.logo {
+    font-size: 22px;
+  }
+
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #1e5631;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+    line-height: 90px;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+  }
+
+  a:hover,
+  a.active {
+    background: none;
+    color: #e6e6e6;
+    
+  }
+
+
+  
+  .notActive {
+    left: -100%;
+  }
+  .active {
+    left: 0%;
+  }
+}
+
+@media(max-width:890px){
+  #logoHeading{
+    height: auto;
+    width: 80vw;
+  }
+  .content{
+      flex-direction: column;
+      padding: 0;
+  }
+  .image{
+      text-align: center;
+      padding: 50px 0;
+  }
+  .infoImage{
+      width: 70vw;
+  }
+  .info{
+      padding:10%;
+  }
+}
+
+.linkedInLogo{
+  width: 20px;
+  height: 20px;
+}
+
+.userImage{
+  height: 150px;
+  width: 150px;
+  border-radius: 100px;
+  box-shadow: 5px 10px 10px gray;
+}
+
+.userCard{
+  border-radius: 50px;
+  box-shadow: -5px 10px 10px gray;
+  padding: 30px 40px;
+  width: 300px;
+  text-align: center;
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 20px;
+  align-items: center;
+}
+
+.cards{
+  display: grid;
+  
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+}
+
+.userEmail{
+  font-size: smaller;
+  color:rgb(87, 86, 86);
+  padding: 0;
+  margin: 0;
+}
+h2{
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.userData{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  column-gap: 20px;
+  justify-content: space-between;
+  align-items: end;
+  text-align: left;
+
+}
+
+#teamHeader{
+  text-align: center;
+}
+
+@media (max-width : 1100px){
+  .cards{
+      grid-template-columns: auto auto;
+  }
+}
+
+@media (max-width : 700px){
+  .cards{
+      grid-template-columns: auto;
+  }
+  .userCard{
+      margin: 20px;
+  }
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+.footer-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+  padding: 30px;
+  background-color: #262726;
+  text-align: center;
+}
+
+footer h3{
+  color: aliceblue;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-large;
+}
+
+.infoIcon{
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.footer-infos{
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  color: aliceblue;
+  font-family: 'Courier New', Courier, monospace;
+  column-gap: 30px;
+}
+
+
+
+@media (max-width : 950px){
+  .footer-infos{
+      grid-template-columns: 300px;
+  }
+  
+}
